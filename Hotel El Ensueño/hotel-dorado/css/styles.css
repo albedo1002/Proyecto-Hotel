@@ -1,0 +1,292 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+
+/* Estilos generales */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+}
+body {
+  font-family: 'Nunito';
+}
+hr {
+  width: 100%;
+  border: 1px solid white;
+}
+
+:root {
+  --color-principal: #d7c9b1;
+  --color-secundario: #f9f6f1;
+  --color-terciario: #06090e;
+  --color-resaltador: #d4af37;
+}
+
+header {
+  z-index: 1;
+  font-family: "Nunito", sans-serif;
+  width: 100%;
+  padding: 0 2rem;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--color-terciario);
+}
+
+.display-none {
+  display: none !important;
+}
+
+.flex {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+}
+
+.flex--col {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.header__nav {
+  border: 1px solid black;
+}
+
+.nav__lista {
+  display: flex;
+  width: fit-content;
+  gap: 20px;
+  align-items: center;
+}
+
+.nav__lista--none {
+  height: fit-content;
+  position: fixed;
+  right: 0;
+  padding: 2rem 1rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  background-color: var(--color-terciario);
+}
+
+.header__logo {
+  width: 6%;
+}
+
+.nav__link {
+  color: white;
+  transition: 0.3s ease all;
+}
+
+.nav__link:hover {
+  color: var(--color-resaltador);
+}
+
+/* Eliminar esto  */
+
+main {
+  height: 100vh;
+}
+
+footer {
+  background-color: var(--color-terciario);
+  font-family: "Nunito", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.footer__content {
+  width: 35%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 35px;
+}
+
+.footer__subtitle {
+  color: white;
+}
+
+.footer__text {
+  color: gainsboro;
+}
+
+.footer__logo {
+  width: 60%;
+}
+
+.footer__img {
+  width: 100%;
+  transition: 0.3s ease all;
+}
+
+.footer__img:hover {
+  scale: 1.1;
+}
+
+.footer__img--content {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+}
+/* Sección de historias de empleados */
+main {
+  padding-top: 0px;
+}
+.contiene_historias {
+  width: 100%;
+  height: 80%;
+  display: flex;
+justify-content: center;
+position: absolute;
+top: 28%;
+}
+.cuadros_empleados {
+  width: 16.6%;
+  height: 64%;
+  margin-left: 15px;
+  margin-right: 15px;
+  background: var(--color-principal);
+  border-radius: 40px;
+  padding: 1%;
+}
+.linea_horizontal {
+  display: block;
+  margin: auto;
+  background-color: var(--color-resaltador);
+  width: 80%;
+  height: 6px;
+  position: relative;
+  top: 92%;
+}
+.foto_empleado {
+  align-items: center;
+  border-radius: 50%;
+  width: 100%;
+  height: 126px;
+  margin-bottom: 24px;
+  margin-top: 12px;
+}
+.foto_empleado img{
+  border-radius: 50%;
+  width: 126px;
+  height: 126px;
+  display: block;
+  margin: auto;
+}
+
+.historia_empleado h4 {
+  margin-bottom: 14px;
+}
+.historia_empleado p, .historia_empleado h4 {
+  text-align: center;
+  font-size: 13.6px;
+}
+
+.descripcion_historias {
+  display: block;
+  margin: auto;
+  width: 100%;
+  position: absolute;
+  top: 850px;
+  font-style: italic;
+  color: gray;
+}
+.contiene_descripcion_h {
+  display: block;
+  margin: auto;
+}
+.descripcion_historias p {
+text-align: left;
+position:absolute;
+left: 38%;
+}
+.titulo_historias {
+  position:absolute;
+  left: 39%;
+  top: 140px;
+  color: #06090E;
+  font-weight: bold;
+  font-size: 36px;
+}
+/*Sección de Sobre el hotel*/
+.main_sobre_hotel {
+  height: 300vh;
+}
+.borde_pagina {
+  width: 100%;
+  height: 22px;
+  background: var(--color-principal);
+position: absolute;
+top: 11.4%;
+}
+.borde_abajo {
+  top: 297.68%
+}
+.contenedor_total_sb_ht {
+  height: 300%;
+  width: 100%;
+  position: absolute;
+top: 0%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 17%;
+}
+.caja_sb_ht {
+  width: 74%;
+  height: 470px;
+  background: var(--color-secundario);
+  border-radius: 40px;
+  padding: 2.5%;
+  display: flex;
+}
+.imagen_centrada {
+  justify-content: center;
+  align-items: center;
+}
+.caja_sb_ht h1, .caja_sb_ht p {
+  margin-left: -38px;
+}
+.descripcion_sb_ht {
+  width: 70vh;
+  max-width: 1000px;
+  text-align: justify;
+}
+.descripcion_sb_ht p, .descripcion_sb_ht h1 {
+  font-size: calc(3rem, 3vw + 2rem, 4.5rem);
+  line-height: 1.45;
+}
+.descripcion_sb_ht h1 {
+  margin-bottom: 16px;
+}
+.imagen_sb_ht {
+  width: 37%;
+  height: 81%;
+  margin-left: 6%;
+  min-width: 40%;
+}
+.imagen_sb_ht img {
+  border: 4px solid white;
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+}
+.imgen_sb_int {
+  box-shadow: 0px 0px 14px 9px rgba(250,250,250,1) inset;
+  -webkit-box-shadow: 0px 0px 14px 9px rgba(250,250,250,1) inset;
+  -moz-box-shadow: 0px 0px 14px 9px rgba(250,250,250,1) inset;
+}
+.sombra_sb_ht {
+  box-shadow: 8px 12px 4px 2px rgba(234,234,234,0.75);
+-webkit-box-shadow: 8px 12px 4px 2px rgba(234,234,234,0.75);
+-moz-box-shadow: 8px 12px 4px 2px rgba(234,234,234,0.75);
+}
